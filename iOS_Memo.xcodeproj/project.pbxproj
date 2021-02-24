@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A17139A25E603EA00657AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17139925E603EA00657AF1 /* AppDelegate.swift */; };
 		3A17139C25E603EA00657AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17139B25E603EA00657AF1 /* SceneDelegate.swift */; };
-		3A17139E25E603EA00657AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17139D25E603EA00657AF1 /* ViewController.swift */; };
 		3A1713A125E603EA00657AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A17139F25E603EA00657AF1 /* Main.storyboard */; };
 		3A1713A425E603EA00657AF1 /* iOS_Memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713A225E603EA00657AF1 /* iOS_Memo.xcdatamodeld */; };
 		3A1713A625E603EC00657AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1713A525E603EC00657AF1 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		3A17139625E603EA00657AF1 /* iOS_Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A17139925E603EA00657AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A17139B25E603EA00657AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A17139D25E603EA00657AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A1713A025E603EA00657AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A1713A325E603EA00657AF1 /* iOS_Memo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Memo.xcdatamodel; sourceTree = "<group>"; };
 		3A1713A525E603EC00657AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				3A17139925E603EA00657AF1 /* AppDelegate.swift */,
 				3A17139B25E603EA00657AF1 /* SceneDelegate.swift */,
-				3A17139D25E603EA00657AF1 /* ViewController.swift */,
 				3A17139F25E603EA00657AF1 /* Main.storyboard */,
 				3A1713A525E603EC00657AF1 /* Assets.xcassets */,
 				3A1713A725E603EC00657AF1 /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A17139E25E603EA00657AF1 /* ViewController.swift in Sources */,
 				3A1713A425E603EA00657AF1 /* iOS_Memo.xcdatamodeld in Sources */,
 				3A17139A25E603EA00657AF1 /* AppDelegate.swift in Sources */,
 				3A17139C25E603EA00657AF1 /* SceneDelegate.swift in Sources */,
