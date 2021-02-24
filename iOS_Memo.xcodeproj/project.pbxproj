@@ -17,6 +17,7 @@
 		3A1713B925E6109F00657AF1 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713B825E6109F00657AF1 /* MemoListTableViewController.swift */; };
 		3A1713BC25E61B9300657AF1 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713BB25E61B9300657AF1 /* ComposeViewController.swift */; };
 		3A1713C325E6212800657AF1 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713C225E6212800657AF1 /* UIViewController+Alert.swift */; };
+		3A1713C625E62AAE00657AF1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713C525E62AAE00657AF1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3A1713B825E6109F00657AF1 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		3A1713BB25E61B9300657AF1 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3A1713C225E6212800657AF1 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		3A1713C525E62AAE00657AF1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				3A17139F25E603EA00657AF1 /* Main.storyboard */,
 				3A1713BB25E61B9300657AF1 /* ComposeViewController.swift */,
 				3A1713B825E6109F00657AF1 /* MemoListTableViewController.swift */,
+				3A1713C525E62AAE00657AF1 /* DetailViewController.swift */,
 				3A1713A525E603EC00657AF1 /* Assets.xcassets */,
 				3A1713A725E603EC00657AF1 /* LaunchScreen.storyboard */,
 				3A1713AA25E603EC00657AF1 /* Info.plist */,
@@ -164,6 +167,7 @@
 				3A17139C25E603EA00657AF1 /* SceneDelegate.swift in Sources */,
 				3A1713B525E60EA600657AF1 /* Model.swift in Sources */,
 				3A1713C325E6212800657AF1 /* UIViewController+Alert.swift in Sources */,
+				3A1713C625E62AAE00657AF1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
