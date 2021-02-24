@@ -13,6 +13,7 @@
 		3A1713A425E603EA00657AF1 /* iOS_Memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713A225E603EA00657AF1 /* iOS_Memo.xcdatamodeld */; };
 		3A1713A625E603EC00657AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1713A525E603EC00657AF1 /* Assets.xcassets */; };
 		3A1713A925E603EC00657AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1713A725E603EC00657AF1 /* LaunchScreen.storyboard */; };
+		3A1713B525E60EA600657AF1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1713B425E60EA600657AF1 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3A1713A525E603EC00657AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A1713A825E603EC00657AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A1713AA25E603EC00657AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1713B425E60EA600657AF1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3A17139825E603EA00657AF1 /* iOS_Memo */ = {
 			isa = PBXGroup;
 			children = (
+				3A1713B325E60E8400657AF1 /* Model */,
 				3A17139925E603EA00657AF1 /* AppDelegate.swift */,
 				3A17139B25E603EA00657AF1 /* SceneDelegate.swift */,
 				3A17139F25E603EA00657AF1 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				3A1713A225E603EA00657AF1 /* iOS_Memo.xcdatamodeld */,
 			);
 			path = iOS_Memo;
+			sourceTree = "<group>";
+		};
+		3A1713B325E60E8400657AF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A1713B425E60EA600657AF1 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				3A1713A425E603EA00657AF1 /* iOS_Memo.xcdatamodeld in Sources */,
 				3A17139A25E603EA00657AF1 /* AppDelegate.swift in Sources */,
 				3A17139C25E603EA00657AF1 /* SceneDelegate.swift in Sources */,
+				3A1713B525E60EA600657AF1 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
