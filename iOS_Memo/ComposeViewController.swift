@@ -10,6 +10,7 @@ import UIKit
 class ComposeViewController: UIViewController {
     
     var editTarget: Memo?
+    var originalMemoContent: String?
     
     @IBOutlet weak var memoTextView: UITextView!
     
@@ -44,10 +45,25 @@ class ComposeViewController: UIViewController {
         if let memo = editTarget {
             self.navigationItem.title = "메모 편집"
             self.memoTextView.text = memo.content
+            originalMemoContent = memo.content
         } else {
             self.navigationItem.title = "새 메모"
             self.memoTextView.text = ""
         }
+        
+        memoTextView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.presentationController?.delegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.presentationController?.delegate = nil
     }
     
 
@@ -61,6 +77,35 @@ class ComposeViewController: UIViewController {
     }
     */
 
+}
+
+extension ComposeViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        if let original = originalMemoContent, let edited = textView.text {
+            if #available(iOS 13.0, *) {
+                isModalInPresentation = original != edited
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+}
+
+extension ComposeViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController) {
+        let alert = UIAlertController(title: "알림", message: "편집한 내용을 저장할까요?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default) { [weak self] (action) in
+            self?.save(action)
+        }
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel) { [weak self] (action) in
+            self?.close(action)
+        }
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 extension ComposeViewController {
